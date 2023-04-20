@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.boxHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: green;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+    background-color: red;
+}
+

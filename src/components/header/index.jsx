@@ -1,13 +1,21 @@
-import style from "./header.module.css"
-import { Link} from 'react-router-dom';
+import style from "./header.module.css";
+import { Link } from "react-router-dom";
 
-export default function Header() {
-    return (
-        <div className={style.boxHeader}>
-            <Link to="https://www.google.com" className={style.text}>Matheus Dallacort</Link>
-            <Link to="https://www.google.com" className={style.text}>Cases</Link>
-            <Link to="https://www.google.com" className={style.text}>Avaliações</Link>
-            <Link to="https://www.google.com" className={style.text}>Contate-me</Link>
-        </div>
-    )
+export default function Header(props) {
+  return (
+    <div className={style.boxHeader}>
+      <Link to="/" className={style.text}>
+        Matheus Dallacort
+      </Link>
+      <Link to="/" className={style.text} onClick={props.onResultadosClick}>
+        Resultados
+      </Link>
+      <Link to="/" className={style.text} onClick={props.onAvaliacoesClick}>
+        Avaliações
+      </Link>
+      <Link to="/" className={style.text} onClick={props.onContactClick}>
+        Contate-me
+      </Link>
+    </div>
+  );
 }

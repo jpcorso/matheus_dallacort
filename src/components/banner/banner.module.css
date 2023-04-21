@@ -1,6 +1,5 @@
 .container{
     background-color: blue;
+    height: 600px;
     display: flex;
-    flex-direction: row;
-    height: 200px;
 }

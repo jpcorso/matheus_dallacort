@@ -1,11 +1,12 @@
 import style from "./header.module.css";
 import { Link } from "react-router-dom";
+import logo from "../../public/LOGO  1.png"
 
 export default function Header(props) {
   return (
     <div className={style.boxHeader}>
-      <Link to="/" className={style.text}>
-        Matheus Dallacort
+      <Link to="/" className={style.logo}>
+        <img src={logo} alt='logo'/>
       </Link>
       <Link to="/" className={style.text} onClick={props.onResultadosClick}>
         Resultados

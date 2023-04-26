@@ -1,7 +1,6 @@
-import style from "./footer.module.css"
+import style from "./banner.module.css"
 
-export default function Footer(){
-
+export default function Banner(){
     return(
         <div className={style.container}>
             

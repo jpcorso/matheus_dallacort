@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: green;
+    background-color: #494848;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     align-items: center;
 }
 

@@ -1,6 +1,6 @@
 import style from "./header.module.css";
 import { Link } from "react-router-dom";
-import logo from "../../public/LOGO  1.png"
+import logo from "../../z_images/LOGO  1.png"
 
 export default function Header(props) {
   return (

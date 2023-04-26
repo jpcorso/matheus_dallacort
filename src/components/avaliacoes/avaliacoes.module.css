@@ -1,12 +1,56 @@
-
-.container{
-    background-color: yellow;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center; /* Adicionado para centralizar o Carousel */
     align-items: center;
-}
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .custom-dot-list-style {
+    margin-top: 20px;
+  }
+  
+  .carousel-item-padding-40-px {
+    padding: 0 20px;
 
-.title{
-    background-color: blue;
-}
+  }
+  
+  .carousel-container {
+    padding: 0 50px;
+    display: flex; /* Adicionado para centralizar o Carousel */
+    justify-content: center; /* Adicionado para centralizar o Carousel */
+    position: relative;
+    align-items: center; /* Adicionado para centralizar verticalmente */
+  }
+  
+  
+  .carousel-container .react-multi-carousel-item {
+    width: 100%;
+  }
+  
+  .carouselItem {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin-bottom: 20px;
+    margin-left: 50px;
+   
+    box-sizing: border-box;
+    display: flex; /* Adicionado para centralizar verticalmente */
+    text-align: center;
+    align-items: center;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .carouselItem {
+      width: 200px;
+      height: 200px;
+    }  
+  }
+  

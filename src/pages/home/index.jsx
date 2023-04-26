@@ -19,13 +19,15 @@ export default function Home() {
 
   return (
     <div className={style.container}>
+      <div className={style.header}>
       <Header 
         onResultadosClick={() => scrollToRef(resultadosRef)}
         onAvaliacoesClick={() => scrollToRef(avaliacoesRef)}
         onContactClick={() => scrollToRef(contactRef)}
       />
+      </div>
       <Banner />
-      <div ref={resultadosRef}>
+      <div ref={resultadosRef} className={style.Resultados}>
         <Resultados />
       </div>
       <div ref={avaliacoesRef}>

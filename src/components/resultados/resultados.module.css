@@ -1,12 +1,23 @@
 
 .container{
     background-color: purple;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .title{
     background-color: red;
+}
+
+.boxProjetos{
+    display: flex;
+    flex-direction: column;
+}
+
+.linhaProjetos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
 }

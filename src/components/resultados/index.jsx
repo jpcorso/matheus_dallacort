@@ -7,7 +7,7 @@ import Depois1 from "../../z_images/resultados/depois_desenho.jpg"
 function Portfolio() {
     return (
       <div className={style.container}>
-        <h1>Meu Portfolio</h1>
+        <h1 className={style.title}>Meu Portfolio</h1>
         <div className={style.boxProjetos}>
             <div className={style.linhaProjetos}>
               <Aluno nome={"Nome"}

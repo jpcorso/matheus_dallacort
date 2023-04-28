@@ -1,0 +1,62 @@
+.foto {
+    width: 120px;
+    height: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+  }
+
+.projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.boxFotos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.title{
+    display: flex;
+    position: relative;
+}
+
+@media (max-width: 900px) {
+
+    .foto{
+        width: 110px;
+        height: 190px;
+        margin-left: 2px;
+        margin-left: 2px;
+    }
+
+    .projeto{
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 790px){
+    .foto{
+        width: 100px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 500px){
+    .foto{
+        width: 120px;
+        height: 200px;
+    }
+}

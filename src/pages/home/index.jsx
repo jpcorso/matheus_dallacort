@@ -26,7 +26,7 @@ export default function Home() {
         onContactClick={() => scrollToRef(contactRef)}
       />
       </div>
-      <Banner />
+      <Banner className={style.banner}/>
       <div ref={resultadosRef} className={style.Resultados}>
         <Resultados />
       </div>

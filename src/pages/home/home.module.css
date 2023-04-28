@@ -5,11 +5,11 @@
 .header
 {
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
     background-color: white; /* Defina a cor de fundo do header aqui */
     padding-top: 60px; /* Defina a altura do header aqui */
   }
+
   

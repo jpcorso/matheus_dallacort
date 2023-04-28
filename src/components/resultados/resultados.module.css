@@ -14,6 +14,11 @@
 .boxProjetos{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+    border-radius: 10px;
+   
 }
 
 .linhaProjetos{
@@ -21,3 +26,27 @@
     flex-direction: row;
     margin-top: 20px;
 }
+
+@media (max-width: 730px){
+    .boxProjetos{
+        width: 700px;
+        
+    }
+
+    .linhaProjetos{
+        margin-left: 13px;
+    }
+}
+
+@media (max-width: 724px){
+    .linhaProjetos{
+        flex-direction: column;
+    }
+
+    .boxProjetos{
+        width: 300px;
+    }
+}
+
+
+

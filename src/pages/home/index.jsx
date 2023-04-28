@@ -9,9 +9,12 @@ import Footer from "../../components/footer";
 import style from "./home.module.css"
 
 export default function Home() {
+
+  const homeRef = useRef(null);
   const resultadosRef = useRef(null);
   const avaliacoesRef = useRef(null);
   const contactRef = useRef(null);
+
 
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -21,12 +24,15 @@ export default function Home() {
     <div className={style.container}>
       <div className={style.header}>
       <Header 
+        onLogoClick={() => scrollToRef(homeRef)}
         onResultadosClick={() => scrollToRef(resultadosRef)}
         onAvaliacoesClick={() => scrollToRef(avaliacoesRef)}
         onContactClick={() => scrollToRef(contactRef)}
       />
       </div>
-      <Banner className={style.banner}/>
+      <div  ref={homeRef} className={style.banner}>
+        <Banner/>
+      </div>
       <div ref={resultadosRef} className={style.Resultados}>
         <Resultados />
       </div>

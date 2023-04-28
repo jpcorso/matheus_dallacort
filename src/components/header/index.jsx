@@ -5,7 +5,7 @@ import logo from "../../z_images/LOGO  1.png"
 export default function Header(props) {
   return (
     <div className={style.boxHeader}>
-      <Link to="/" className={style.logo}>
+      <Link to="/" className={style.logo} onClick={props.onLogoClick}>
         <img src={logo} alt='logo'/>
       </Link>
       <Link to="/" className={style.text} onClick={props.onResultadosClick}>

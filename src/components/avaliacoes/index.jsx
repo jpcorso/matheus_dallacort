@@ -1,26 +1,27 @@
 import style from "./avaliacoes.module.css";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import Cliente from "../cliente"
-
 import foto1 from "../../z_images/LOGO  1.png";
-
 
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 3,
-        slidesToSlide: 3 // optional, default to 1.
+        items: 1,
+        slidesToSlide: 1, // optional, default to 1
+        partialVisibilityGutter: 30 // this is needed to tell the amount of px that should be visible.
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 2,
-        slidesToSlide: 2 // optional, default to 1.
+        items: 1,
+        slidesToSlide: 1, // optional, default to 1
+        partialVisibilityGutter: 30 // this is needed to tell the amount of px that should be visible.
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
         items: 1,
-        slidesToSlide: 1 // optional, default to 1.
+        slidesToSlide: 1, // optional, default to 1
+        partialVisibilityGutter: 30 // this is needed to tell the amount of px that should be visible.
     }
 };
 
@@ -29,8 +30,8 @@ export default function Avaliacoes(){
         <div className={style.container}>
             <div className={style.title}>Avaliações</div>
             <Carousel
-                swipeable={false}
-                draggable={false}
+                swipeable={true}
+                draggable={true}
                 showDots={true}
                 responsive={responsive}
                 ssr={true} // means to render carousel on server-side.
@@ -42,13 +43,10 @@ export default function Avaliacoes(){
                 focusOnSelect={false}
                 customTransition="all .5"
                 transitionDuration={500}
-                containerClass="carousel-container"
+                containerClass={style.carouselContainer}
                 removeArrowOnDeviceType={["tablet", "mobile"]}
-                deviceType={"desktop"}
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
-            
-
             >
                 <div className={style.carouselItem}><Cliente
                                                         nome={"João"}

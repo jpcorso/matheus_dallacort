@@ -1,4 +1,23 @@
+.containe{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .foto{
-    width: 30%;
-    height: 30%;
+    width: 10%;
+    height: 10%;
+}
+
+.nome{
+    font-size: 20px;
+}
+
+.descricao{
+    font-size: 20px;
+}
+
+.mensagem{
+    font-size: 25px;
 }

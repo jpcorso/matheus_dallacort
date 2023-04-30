@@ -3,6 +3,7 @@ import Header from "../../components/header";
 import Banner from "../../components/banner";
 import Resultados from "../../components/resultados";
 import Avaliacoes from "../../components/avaliacoes";
+import Sobre from '../../components/sobre';
 import Contact from "../../components/contact";
 import Footer from "../../components/footer";
 
@@ -13,6 +14,7 @@ export default function Home() {
   const homeRef = useRef(null);
   const resultadosRef = useRef(null);
   const avaliacoesRef = useRef(null);
+  const sobreRef = useRef(null)
   const contactRef = useRef(null);
 
 
@@ -27,6 +29,7 @@ export default function Home() {
         onLogoClick={() => scrollToRef(homeRef)}
         onResultadosClick={() => scrollToRef(resultadosRef)}
         onAvaliacoesClick={() => scrollToRef(avaliacoesRef)}
+        onSobreClick={() => scrollToRef(sobreRef)}
         onContactClick={() => scrollToRef(contactRef)}
       />
       </div>
@@ -38,6 +41,9 @@ export default function Home() {
       </div>
       <div ref={avaliacoesRef}>
         <Avaliacoes />
+      </div>
+      <div ref={sobreRef}>
+        <Sobre />
       </div>
       <div ref={contactRef}>
         <Contact />

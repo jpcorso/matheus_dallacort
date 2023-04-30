@@ -8,8 +8,8 @@ export default function Header(props) {
       <Link to="/" className={style.logo} onClick={props.onLogoClick}>
         <img src={logo} alt='logo'/>
       </Link>
-      <Link to="/" className={style.text} onClick={props.onResultadosClick}>
-        Resultados
+      <Link to="/" className={style.text} onClick={props.onServicosClick}>
+        Serviços
       </Link>
       <Link to="/" className={style.text} onClick={props.onAvaliacoesClick}>
         Avaliações

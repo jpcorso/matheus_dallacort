@@ -1,25 +1,25 @@
-
 .container{
-    background-color: #494848;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #A3CB3C;
+}
+
+.boxServicos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.boxContact{
-    display: flex;
-    flex-direction: column;    
-    justify-content: center;
-    align-items: center;
-}
-
-.textContact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.title{
-    background-color: green;
+.icone{
+    width: 200px;
+    height: 200px;
 }

@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import Header from "../../components/header";
 import Banner from "../../components/banner";
-import Resultados from "../../components/resultados";
 import Avaliacoes from "../../components/avaliacoes";
+import Servicos from "../../components/servicos";
 import Contact from "../../components/contact";
 import Footer from "../../components/footer";
 
@@ -11,7 +11,7 @@ import style from "./home.module.css"
 export default function Home() {
 
   const homeRef = useRef(null);
-  const resultadosRef = useRef(null);
+  const servicosRef = useRef(null);
   const avaliacoesRef = useRef(null);
   const contactRef = useRef(null);
 
@@ -25,7 +25,7 @@ export default function Home() {
       <div className={style.header}>
       <Header 
         onLogoClick={() => scrollToRef(homeRef)}
-        onResultadosClick={() => scrollToRef(resultadosRef)}
+        onServicosClick={() => scrollToRef(servicosRef)}
         onAvaliacoesClick={() => scrollToRef(avaliacoesRef)}
         onContactClick={() => scrollToRef(contactRef)}
       />
@@ -33,11 +33,11 @@ export default function Home() {
       <div  ref={homeRef} className={style.banner}>
         <Banner/>
       </div>
-      <div ref={resultadosRef} className={style.Resultados}>
-        <Resultados />
+      <div ref={servicosRef} className={style.servicos}>
+        <Servicos />
       </div>
       <div ref={avaliacoesRef}>
-        <Avaliacoes />
+        <Avaliacoes/>
       </div>
       <div ref={contactRef}>
         <Contact />

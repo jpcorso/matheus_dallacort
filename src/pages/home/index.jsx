@@ -6,6 +6,7 @@ import Avaliacoes from "../../components/avaliacoes";
 import Sobre from '../../components/sobre';
 import Contact from "../../components/contact";
 import Footer from "../../components/footer";
+import "../../index.css"
 
 import style from "./home.module.css"
 

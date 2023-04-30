@@ -9,21 +9,24 @@ function Servicos() {
       <div className={style.container}>
         <h1 className={style.title}>Serviços</h1>
         <div className={style.boxServicos}>
+
           <div className={style.item}>
             <img className={style.icone} src={logo}/>
-            Treinos<br/>
+            <div className={style.textItem}>Treinos<br/></div>
             Personalizados
           </div>
+
           <div className={style.item}>
             <img className={style.icone} src={logo1}/>
-            Avaliações Físicas<br/>
-            e posturais
+            <div className={style.textItem}>Avaliações Físicas<br/>
+            e posturais</div>
           </div>
 
           <div className={style.item}>
             <img className={style.icone} src={logo2}/>
-            Acompanhamento<br/>
+            <div className={style.textItem}>Acompanhamento<br/>
             diário
+            </div>
           </div>
 
         </div>

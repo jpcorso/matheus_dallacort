@@ -1,6 +1,6 @@
 
 .container{
-    background-color: red;
+    background-color: #494848;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,5 +21,6 @@
 }
 
 .title{
-    background-color: green;
+    font-size: 28px;
+    font-weight: 600;
 }

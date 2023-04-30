@@ -18,9 +18,9 @@ export default function Sobre(){
                         e tudo mais ta ligado porque aqui o negocio é louco
                         sabe como é Lorem ipsum dolor sit, amet consectetur 
                         adipisicing elit. Voluptates eos obcaecati cum accusamus
-                         quidem sed deleniti alias minima, laudantium quae voluptatibus 
-                         ad doloribus distinctio blanditiis exercitationem hic quaerat 
-                         totam impedit."
+                        quidem sed deleniti alias minima, laudantium quae voluptatibus 
+                        ad doloribus distinctio blanditiis exercitationem hic quaerat 
+                        totam impedit."
                     </div>
                 </div>
             </div>

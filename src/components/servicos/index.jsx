@@ -1,8 +1,9 @@
 import style from "./servicos.module.css"
 
-import logo from "../../z_images/LOGO_4.png"
-import logo1 from "../../z_images/LOGO  1.png"
-import logo2 from "../../z_images/LOGO  2.png"
+//icones por Fox Design: https://iconscout.com/icon-pack/gym-and-fitness-3
+import calendario from "../../z_images/gym-schedule.svg"
+import fitaMetrica from "../../z_images/measure-tape.svg"
+import halter from "../../z_images/dumbbell.svg"
 
 function Servicos() {
     return (
@@ -11,19 +12,20 @@ function Servicos() {
         <div className={style.boxServicos}>
 
           <div className={style.item}>
-            <img className={style.icone} src={logo}/>
-            <div className={style.textItem}>Treinos<br/></div>
+            <img className={style.icone} src={halter}/>
+            <div className={style.textItem}>Treinos<br/>
             Personalizados
+            </div>
           </div>
 
           <div className={style.item}>
-            <img className={style.icone} src={logo1}/>
+            <img className={style.icone} src={fitaMetrica}/>
             <div className={style.textItem}>Avaliações Físicas<br/>
             e posturais</div>
           </div>
 
           <div className={style.item}>
-            <img className={style.icone} src={logo2}/>
+            <img className={style.icone} src={calendario}/>
             <div className={style.textItem}>Acompanhamento<br/>
             diário
             </div>

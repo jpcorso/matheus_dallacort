@@ -3,12 +3,16 @@
     background-color: #494848;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .boxContact{
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    justify-content: center;   
+    align-items: center;
+    margin-bottom: 50px;
+    
 }
 
 .textContact{
@@ -65,6 +69,7 @@
     font-size: 28px;
     font-weight: 600;
     color: #A3CB3C;
+    
 }
 
 .submitButton{
@@ -89,6 +94,109 @@
     background-color: #494848;
     border: 2px solid #A3CB3C;
 }
+
+.logo{
+    display: flex;
+    width: 356px !important;
+    height: 200px !important;
+}
+
+.iconRedesSociais{
+    display: flex;
+    flex-direction: row;
+}
+
+.redesSociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #A3CB3C;
+}
+
+.logo{
+    display: flex;
+    width: 220px;
+    height: 150px;
+}
+
+.textRedesSociais{
+    font-size: 30px;
+}
+
+.creditos{
+    display: flex;
+    flex-direction: flex-end;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: #A3CB3C;
+}
+
+.boxFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1370px) {
+    .logo{
+        margin-left: 20px;
+        width: 261px !important;
+        height: 150px !important;
+    }
+
+    .redesSociais{
+        font-size: 18px;
+    }
+
+    .textRedesSociais{
+        font-size: 22px;
+    }
+    
+}
+
+@media (max-width: 1150px) {
+    .boxFooter{
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-bottom: 30px;
+    }
+
+    .redesSociais{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 642px){
+    .mensagemContact{
+        width: 100%;
+    }
+
+    .textContact{
+        width: 100%;
+    }
+
+    .creditos{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        margin-left: 40px;
+        margin-right: 0;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+}
+
 
 
 

@@ -5,7 +5,6 @@ import Avaliacoes from "../../components/avaliacoes";
 import Servicos from "../../components/servicos";
 import Sobre from '../../components/sobre';
 import Contact from "../../components/contact";
-import Footer from "../../components/footer";
 import "../../index.css"  //globals
 
 import style from "./home.module.css"
@@ -38,16 +37,15 @@ export default function Home() {
       <div ref={servicosRef} className={style.servicos}>
         <Servicos />
       </div>
-      <div>
+      <div ref={sobreRef}>
         <Avaliacoes/>
       </div>
-      <div ref={sobreRef}>
+      <div>
         <Sobre />
       </div>
       <div ref={contactRef}>
         <Contact />
       </div>
-      <Footer />
     </div>
   );
 }

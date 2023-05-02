@@ -17,7 +17,7 @@ import React, { useState } from "react";
             return(
                 <>
                     <div className={style.container}>
-            <p className={style.title}>Contate-me</p>
+            <div className={style.title}>Contate-me</div>
             <div className={style.boxContact}>
                 <form
                     action={ENDPOINT}
@@ -27,25 +27,24 @@ import React, { useState } from "react";
                     name="contact"
                     data-netlify="true"
                 >
-                    <input
+                    <textarea
                         type="text"
                         placeholder="Nome"
                         name="nome"
                         className={style.textContact}
                         required
                     />
-                    <input
+                    <textarea
                         type="text"
                         placeholder="E-mail"
                         name="email"
                         className={style.textContact}
                         required
                     />
-                    <input
-                        type="text"
+                    <textarea
                         placeholder="Mensagem"
-                        name="Mensagem"
-                        className={style.textContact}
+                        name="mensagem"
+                        className={style.mensagemContact}
                         required
                     />
                     <button
@@ -76,25 +75,24 @@ import React, { useState } from "react";
                     name="contact"
                     data-netlify="true"
                 >
-                    <input
+                    <textarea
                         type="text"
                         placeholder="Nome"
                         name="nome"
                         className={style.textContact}
                         required
                     />
-                    <input
+                    <textarea
                         type="text"
                         placeholder="E-mail"
                         name="email"
                         className={style.textContact}
                         required
                     />
-                    <input
-                        type="text"
+                    <textarea
                         placeholder="Mensagem"
-                        name="Mensagem"
-                        className={style.textContact}
+                        name="mensagem"
+                        className={style.mensagemContact}
                         required
                     />
                     <button

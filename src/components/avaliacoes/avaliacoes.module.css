@@ -1,29 +1,82 @@
-.carouselItem{
-  width: 250px;
-  height: 300px;
-  align-items: center;
-}
-
 .container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #494848;
 }
 
-.carousel .slide {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
+.separator{
+    width: 100%;
 }
 
-.carouselContainer{
-  align-items: center;
-  justify-content: center;
+.carouselWrapper{
+    width: 100%;
 }
 
-.carousel .carouselContainer {
-  max-width: 90%;
+.foto{
+    width: 80%;
 }
+
+.nome{
+    color: #ffffff;
+}
+
+/* Estilo dos botões de seta */
+.arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #94FC3C;
+    margin: 0 10px;
+    outline: none;
+  }
+  
+  /* Estilo da seta para esquerda */
+  .arrowPrev {
+    transform: rotate(180deg);
+  }
+  
+  /* Estilo da paginação */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+  }
+  
+  /* Estilo dos botões de paginação */
+  .pageButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000000;
+    margin: 0 5px;
+    outline: none;
+  }
+  
+  /* Estilo da página ativa */
+  .activePage {
+    background-color: #94FC3C;
+    border-radius: 100%;
+    border: none; 
+    width: 10px;
+    height: 10px;
+    outline: 1px solid #94FC3C;
+  }
+  
+  /* Estilo da página inativa */
+  .inactivePage {
+    opacity: 0.5;
+    border-radius: 100%;
+    background-color: #494848;
+    box-shadow: 0;
+    border: none; 
+    width: 10px;
+    height: 10px;
+    outline: 1px solid #94FC3C;
+  }
+  

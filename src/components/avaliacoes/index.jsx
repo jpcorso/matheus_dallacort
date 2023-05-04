@@ -1,15 +1,16 @@
 import style from "./avaliacoes.module.css";
 import Cliente from "../cliente"
-import foto1 from "../../z_images/LOGO  1.png";
+import logo from "../../z_images/LOGO  1.png";
 import React, { useState } from 'react';
 import Carousel from 'react-elastic-carousel';
 import Item from "./Item"
+
+import foto1 from "../../z_images/pessoa.jpeg"
 
 export default function Avaliacoes(){
 
     return(
         <div className={style.container}>
-            <hr className={style.separator}/>
             <div className={style.carouselWrapper}>
                 <Carousel 
                     itemsToShow={1} 
@@ -22,15 +23,72 @@ export default function Avaliacoes(){
                     pagination={true}
                     isInfinite={true} // adicionado aqui
                 >
-                    <Item>
-                        <img className={style.foto} src={foto1}/>
-                        <div className={style.nome}>Gostei muito das aulas e pipipi</div>
+                    <Item className={style.carouselItem}>
+                      <Cliente nome='Nome'
+                               mensagem='Lorem ipsum dolor, sit amet consectetur
+                               adipisicing elit. Molestias perspiciatis praesentium 
+                               reiciendis porro, tempore ipsam cumque repellat nemo et
+                               voluptate obcaecati? Quam iure asperiores magni distinctio
+                               commodi libero minus delectus.'
+                               descricao='cliente há 3 anos'
+                               foto={foto1}
+                      />
                     </Item>
-                    <Item>2</Item>
-                    <Item>3</Item>
-                    <Item>4</Item>
-                    <Item>5</Item>
-                    <Item>6</Item>
+                    <Item className={style.carouselItem}>
+                      <Cliente nome='Nome'
+                               mensagem='Lorem ipsum dolor, sit amet consectetur
+                               adipisicing elit. Molestias perspiciatis praesentium 
+                               reiciendis porro, tempore ipsam cumque repellat nemo et
+                               voluptate obcaecati? Quam iure asperiores magni distinctio
+                               commodi libero minus delectus.'
+                               descricao='cliente há 3 anos'
+                               foto={foto1}
+                      /> 
+                    </Item>
+                    <Item className={style.carouselItem}>
+                      <Cliente nome='Nome'
+                               mensagem='Lorem ipsum dolor, sit amet consectetur
+                               adipisicing elit. Molestias perspiciatis praesentium 
+                               reiciendis porro, tempore ipsam cumque repellat nemo et
+                               voluptate obcaecati? Quam iure asperiores magni distinctio
+                               commodi libero minus delectus.'
+                               descricao='cliente há 3 anos'
+                               foto={foto1}
+                      />
+                    </Item>
+                    <Item className={style.carouselItem}>
+                      <Cliente nome='Nome'
+                               mensagem='Lorem ipsum dolor, sit amet consectetur
+                               adipisicing elit. Molestias perspiciatis praesentium 
+                               reiciendis porro, tempore ipsam cumque repellat nemo et
+                               voluptate obcaecati? Quam iure asperiores magni distinctio
+                               commodi libero minus delectus.'
+                               descricao='cliente há 3 anos'
+                               foto={foto1}
+                      />
+                    </Item>
+                    <Item className={style.carouselItem}>
+                      <Cliente nome='Nome'
+                               mensagem='Lorem ipsum dolor, sit amet consectetur
+                               adipisicing elit. Molestias perspiciatis praesentium 
+                               reiciendis porro, tempore ipsam cumque repellat nemo et
+                               voluptate obcaecati? Quam iure asperiores magni distinctio
+                               commodi libero minus delectus.'
+                               descricao='cliente há 3 anos'
+                               foto={foto1}
+                      />
+                    </Item>
+                    <Item className={style.carouselItem}>
+                      <Cliente nome='Nome'
+                               mensagem='Lorem ipsum dolor, sit amet consectetur
+                               adipisicing elit. Molestias perspiciatis praesentium 
+                               reiciendis porro, tempore ipsam cumque repellat nemo et
+                               voluptate obcaecati? Quam iure asperiores magni distinctio
+                               commodi libero minus delectus.'
+                               descricao='cliente há 3 anos'
+                               foto={foto1}
+                      />
+                    </Item>
                 </Carousel>
             </div>   
         </div>

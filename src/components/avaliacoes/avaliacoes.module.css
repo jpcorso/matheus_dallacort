@@ -1,56 +1,77 @@
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    text-align: center; /* Adicionado para centralizar o Carousel */
+.container{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-  
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .custom-dot-list-style {
-    margin-top: 20px;
-  }
-  
-  .carousel-item-padding-40-px {
-    padding: 0 20px;
+    justify-content: center;
+    background-color: #494848;
+}
 
-  }
-  
-  .carousel-container {
-    padding: 0 50px;
-    display: flex; /* Adicionado para centralizar o Carousel */
-    justify-content: center; /* Adicionado para centralizar o Carousel */
-    position: relative;
-    align-items: center; /* Adicionado para centralizar verticalmente */
-  }
-  
-  
-  .carousel-container .react-multi-carousel-item {
+.carouselWrapper{
     width: 100%;
+    margin-bottom: 40px;
+}
+
+.carouselItem{
+  background-color: transparent !important;
+}
+
+.nome{
+    color: #ffffff;
+}
+
+/* Estilo dos botões de seta */
+.arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #94FC3C;
+    margin: 0 10px;
+    outline: none;
   }
   
-  .carouselItem {
-    width: 300px;
-    height: 300px;
-    background-color: green;
-    margin-bottom: 20px;
-    margin-left: 50px;
-   
-    box-sizing: border-box;
-    display: flex; /* Adicionado para centralizar verticalmente */
-    text-align: center;
-    align-items: center;
+  /* Estilo da seta para esquerda */
+  .arrowPrev {
+    transform: rotate(180deg);
   }
   
+  /* Estilo da paginação */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    
+  }
   
-  @media only screen and (max-width: 768px) {
-    .carouselItem {
-      width: 200px;
-      height: 200px;
-    }  
+  /* Estilo dos botões de paginação */
+  .pageButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000000;
+    margin: 0 5px;
+    outline: none;
+  }
+  
+  /* Estilo da página ativa */
+  .activePage {
+    background-color: #94FC3C;
+    border-radius: 100%;
+    border: none; 
+    width: 10px;
+    height: 10px;
+    outline: 1px solid #94FC3C;
+  }
+  
+  /* Estilo da página inativa */
+  .inactivePage {
+    opacity: 0.5;
+    border-radius: 100%;
+    background-color: #494848;
+    box-shadow: 0;
+    border: none; 
+    width: 10px;
+    height: 10px;
+    outline: 1px solid #94FC3C;
   }
   

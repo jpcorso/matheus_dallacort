@@ -79,7 +79,7 @@
     font-size: 18px;
     border-radius: 5px;
     background-color: #A3CB3C;
-    border: none;
+    border: 2px solid #A3CB3C;
     color: #494848;
     text-align: center;
     text-decoration: none;
@@ -93,6 +93,12 @@
     color: #A3CB3C;
     background-color: #494848;
     border: 2px solid #A3CB3C;
+}
+
+.submitButton:active{
+    background-color: #A3CB3C;
+    border: none;
+    color: #494848;
 }
 
 .logo{
@@ -138,6 +144,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 85px;
 }
 
 .icon{

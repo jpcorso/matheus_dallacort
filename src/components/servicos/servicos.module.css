@@ -42,8 +42,9 @@
 /*Aqui começa o carousel*/
 
 .carouselWrapper{
-    width: 100%;
+    width: 30%;
     margin-bottom: 40px;
+    height: contain;
 }
 
 .carouselItem{
@@ -104,4 +105,22 @@
     width: 10px;
     height: 10px;
     outline: 1px solid #94FC3C;
+  }
+
+  @media (max-width: 2000px) {
+    .carouselWrapper{
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .carouselWrapper{
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .carouselWrapper{
+      width: 100%;
+    }
   }

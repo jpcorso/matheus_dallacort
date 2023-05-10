@@ -11,6 +11,7 @@
     "react-dom": "^17.0.2",
     "react-elastic-carousel": "^0.11.5",
     "react-multi-carousel": "^2.8.3",
+    "react-player": "^2.12.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router": "^6.10.0",
     "react-router-dom": "^6.10.0",

@@ -21,7 +21,7 @@ export default function Avaliacoes(){
                     renderPagination={myPagination}
                     itemPadding={[10, 10]}
                     pagination={true}
-                    isInfinite={true} // adicionado aqui
+                    isInfinite={true}
                 >
                     <Item className={style.carouselItem}>
                       <Cliente nome='Nome'

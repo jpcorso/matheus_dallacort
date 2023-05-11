@@ -1,5 +1,5 @@
 import style from "./avaliacoes.module.css";
-import Cliente from "../cliente"
+import Cliente from "./cliente"
 import logo from "../../z_images/LOGO  1.png";
 import React, { useState } from 'react';
 import Carousel from 'react-elastic-carousel';
@@ -11,6 +11,7 @@ export default function Avaliacoes(){
 
     return(
         <div className={style.container}>
+            <div className={style.title}>Resultados</div>
             <div className={style.carouselWrapper}>
                 <Carousel 
                     itemsToShow={1} 
@@ -32,6 +33,8 @@ export default function Avaliacoes(){
                                commodi libero minus delectus.'
                                descricao='cliente há 3 anos'
                                foto={foto1}
+                               antes={foto1}
+                               depois={foto1}
                       />
                     </Item>
                     <Item className={style.carouselItem}>
@@ -43,6 +46,8 @@ export default function Avaliacoes(){
                                commodi libero minus delectus.'
                                descricao='cliente há 3 anos'
                                foto={foto1}
+                               antes={foto1}
+                               depois={foto1}
                       /> 
                     </Item>
                     <Item className={style.carouselItem}>
@@ -54,6 +59,8 @@ export default function Avaliacoes(){
                                commodi libero minus delectus.'
                                descricao='cliente há 3 anos'
                                foto={foto1}
+                               antes={foto1}
+                               depois={foto1}
                       />
                     </Item>
                     <Item className={style.carouselItem}>
@@ -65,6 +72,8 @@ export default function Avaliacoes(){
                                commodi libero minus delectus.'
                                descricao='cliente há 3 anos'
                                foto={foto1}
+                               antes={foto1}
+                               depois={foto1}
                       />
                     </Item>
                     <Item className={style.carouselItem}>
@@ -76,6 +85,8 @@ export default function Avaliacoes(){
                                commodi libero minus delectus.'
                                descricao='cliente há 3 anos'
                                foto={foto1}
+                               antes={foto1}
+                               depois={foto1}
                       />
                     </Item>
                     <Item className={style.carouselItem}>
@@ -87,6 +98,8 @@ export default function Avaliacoes(){
                                commodi libero minus delectus.'
                                descricao='cliente há 3 anos'
                                foto={foto1}
+                               antes={foto1}
+                               depois={foto1}
                       />
                     </Item>
                 </Carousel>

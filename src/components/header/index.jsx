@@ -11,6 +11,9 @@ export default function Header(props) {
       <Link to="/" className={style.text} onClick={props.onServicosClick}>
         Serviços
       </Link>
+      <Link to="/" className={style.text} onClick={props.onResultadosClick}>
+        Resultados
+      </Link>
       <Link to="/" className={style.text} onClick={props.onSobreClick}>
         Sobre
       </Link>

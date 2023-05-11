@@ -9,8 +9,14 @@ export default function Cliente({ nome, descricao, mensagem, foto, antes, depois
       <div className={style.descricao}>{descricao}</div>
       <div className={style.mensagem}>{mensagem}</div>
       <div className={style.boxResultado}>
-        <img className={style.fotoResultado} src={antes} alt='antes'/>
-        <img className={style.fotoResultado} src={depois} alt='depois'/>
+        <div className={style.antes}>
+          <img className={style.fotoResultado} src={antes} alt='antes'/>
+          Antes
+        </div>
+        <div className={style.depois}>
+          <img className={style.fotoResultado} src={depois} alt='depois'/>
+          Depois
+        </div>
       </div>
     </div>
   );

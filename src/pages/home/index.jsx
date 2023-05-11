@@ -13,6 +13,7 @@ export default function Home() {
 
   const homeRef = useRef(null);
   const servicosRef = useRef(null);
+  const resultadosRef = useRef(null);
   const sobreRef = useRef(null)
   const contactRef = useRef(null);
 
@@ -27,6 +28,7 @@ export default function Home() {
       <Header 
         onLogoClick={() => scrollToRef(homeRef)}
         onServicosClick={() => scrollToRef(servicosRef)}
+        onResultadosClick={() => scrollToRef(resultadosRef)}
         onSobreClick={() => scrollToRef(sobreRef)}
         onContactClick={() => scrollToRef(contactRef)}
       />
@@ -37,10 +39,10 @@ export default function Home() {
       <div ref={servicosRef} className={style.servicos}>
         <Servicos />
       </div>
-      <div ref={sobreRef}>
+      <div ref={resultadosRef}>
         <Avaliacoes/>
       </div>
-      <div>
+      <div ref={sobreRef}>
         <Sobre />
       </div>
       <div ref={contactRef}>

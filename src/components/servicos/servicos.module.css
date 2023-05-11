@@ -119,8 +119,26 @@
     }
   }
 
-  @media (max-width: 600px) {
+  @media(max-width: 825px){
     .carouselWrapper{
       width: 100%;
     }
   }
+
+  @media (max-width: 600px) {
+
+    .boxServicos{
+      flex-direction: column;
+    }
+
+    .textItem{
+      font-size: 14px;
+    }
+
+    .icone{
+      width: 80px;
+      height: 80px;
+    }
+
+  }
+

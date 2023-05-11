@@ -6,10 +6,12 @@ import ReactPlayer from "react-player"
 
 function Video({videoURL}){
     return(
-        <ReactPlayer
-            url={videoURL}
-            controls={true}
-        />
+        <div className={style.container}>
+            <ReactPlayer
+                url={videoURL}
+                controls={true}
+            />
+        </div>
     )
 }
 

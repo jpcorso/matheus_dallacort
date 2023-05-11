@@ -3,6 +3,7 @@
     font-weight: 600;
     align-items: center;
     color: #494848;
+    margin-top: 30px;
 }
 
 .container{
@@ -57,7 +58,7 @@
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #94FC3C;
+    color: #494848;
     margin: 0 10px;
     outline: none;
   }
@@ -87,24 +88,24 @@
   
   /* Estilo da página ativa */
   .activePage {
-    background-color: #94FC3C;
+    background-color: #494848;
     border-radius: 100%;
     border: none; 
     width: 10px;
     height: 10px;
-    outline: 1px solid #94FC3C;
+    outline: 1px solid #494848;
   }
   
   /* Estilo da página inativa */
   .inactivePage {
     opacity: 0.5;
     border-radius: 100%;
-    background-color: #494848;
+    background-color: #A3CB3C;
     box-shadow: 0;
     border: none; 
     width: 10px;
     height: 10px;
-    outline: 1px solid #94FC3C;
+    outline: 1px solid #494848;
   }
 
   @media (max-width: 2000px) {

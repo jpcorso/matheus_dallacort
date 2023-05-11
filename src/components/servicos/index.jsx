@@ -8,8 +8,7 @@ import halter from "../../z_images/dumbbell.svg"
 //carousel com videos
 import Carousel from 'react-elastic-carousel';
 import Item from './Item'
-import VideoPlayer from "../videoPlayer";
-import Video from "../video";
+import Video from "./video";
 
 import React, {useState} from "react"
 

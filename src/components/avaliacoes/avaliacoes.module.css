@@ -13,6 +13,7 @@
 
 .carouselItem{
   background-color: transparent !important;
+  height: 800px !important;
 }
 
 .nome{
@@ -39,6 +40,7 @@
   .pagination {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     
   }
   
@@ -73,5 +75,12 @@
     width: 10px;
     height: 10px;
     outline: 1px solid #94FC3C;
+  }
+
+  .title{
+    font-size: 28px;
+    font-weight: 600;
+    color: #A3CB3C;
+    margin-top: 30px;
   }
   

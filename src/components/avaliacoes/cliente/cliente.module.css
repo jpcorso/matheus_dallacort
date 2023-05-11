@@ -27,6 +27,50 @@
     text-align: justify;
 }
 
+/*Resultados*/
+
+.boxResultado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fotoResultado{
+    display: flex;
+    width: 400px;
+    height: 500px;
+    margin-left: 10px;
+}
+
+.antes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+
+.depois{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+
+@media (max-width: 1020px) {
+    .fotoResultado{
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fotoResultado{
+        width: 250px;
+        height: 350px;
+    }
+}
+
 @media (max-width: 700px){
     .mensagem{
         font-size: 20px;
@@ -36,6 +80,11 @@
     }
     .nome{
         font-size: 18px;
+    }
+
+    .fotoResultado{
+        width: 200px;
+        height: 300px;
     }
 }
 

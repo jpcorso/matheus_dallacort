@@ -3,6 +3,7 @@
     font-weight: 600;
     align-items: center;
     color: #494848;
+    margin-top: 30px;
 }
 
 .nome{
@@ -33,6 +34,7 @@
 .container{
     align-items: center;
     background-color: #A3CB3C;
+    display: flex;
 }
 
 .boxSobre{

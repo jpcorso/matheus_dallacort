@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
   }
-
-.boxHeader{
+  
+  .boxHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -13,17 +13,17 @@ body {
     padding: 0;
     position: fixed;
     top: 0;
-}
-
-.text{
+  }
+  
+  .text {
     display: flex;
     flex-direction: row;
     text-decoration: none;
     color: #ffffff;
     align-items: center;
-}
-
-.logo{
+  }
+  
+  .logo {
     width: 120px;
     height: 70px;
     display: flex;
@@ -31,6 +31,30 @@ body {
     align-items: left;
     margin-bottom: 10px;
     margin-top: 10px;
+  }
+  
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    background-color: #494848;
+    margin-left: 80vw;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+  }
 
-}
-
+  .mobileMenu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  

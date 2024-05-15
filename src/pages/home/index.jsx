@@ -37,16 +37,16 @@ export default function Home() {
         <Banner/>
       </div>
       <div ref={servicosRef} className={style.servicos}>
-        <Servicos />
+        <Servicos/>
       </div>
       <div ref={resultadosRef}>
         <Avaliacoes/>
       </div>
       <div ref={sobreRef}>
-        <Sobre />
+        <Sobre/>
       </div>
       <div ref={contactRef}>
-        <Contact />
+        <Contact/>
       </div>
     </div>
   );
